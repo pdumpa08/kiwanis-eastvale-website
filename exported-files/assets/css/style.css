@@ -5,25 +5,32 @@ body {
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Nunito Sans';
-  font-weight: 700;
-  color: black;
+.btn {
+  color: #FAFAFA;
 }
 
-html {font-size: 100%;} /* 16px */
+h1 {
+  color: #030303 !important;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 0.95;
+  margin-bottom: 50px;
+}
 
-h1 {font-size: 4.210rem; /* 67.36px */}
+h2 {
+  color: #030303 !important;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 0.95;
+  margin-bottom: 30px;
+}
 
-h2 {font-size: 3.158rem; /* 50.56px */}
-
-h3 {font-size: 2.369rem; /* 37.92px */}
-
-h4 {font-size: 1.777rem; /* 28.48px */}
-
-h5 {font-size: 1.333rem; /* 21.28px */}
-
-small {font-size: 0.750rem; /* 12px */}
+p {
+  color: #999999 !important;
+  font-size: 24.28px;
+  line-height: 2.0;
+  margin-bottom: 50px;
+}
 
 :root[data-theme="light"] {
   --text: #000000;
@@ -39,3 +46,47 @@ small {font-size: 0.750rem; /* 12px */}
   --secondary: #275068;
   --accent: #a58a4a;
 }
+
+.fade-in-image {
+  animation: fadeInDown 2s; 
+}
+
+.fade-in-image-t { animation: fadeInDownT 2s; }
+
+.fade-in-image-a { animation: fadeInDownA 2s; }
+
+@keyframes fadeInDownA {
+  0% {
+     opacity: 0;
+     transform: translate(5%, 100px);
+  }
+  100% {
+     opacity: 1;
+     transform: translate(5%, -25%);
+  }
+} 
+
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translate(6.5%, 100px);
+     position: fixed;
+  }
+  100% {
+     opacity: 1;
+     transform: translate(6.5%, 0%);
+     position: fixed;
+  }
+} 
+
+@keyframes fadeInDownT {
+  0% {
+     opacity: 0;
+     transform: translate(30%, 100px);
+  }
+  100% {
+     opacity: 1;
+     transform: translate(30%, -25%);
+  }
+} 
+  
