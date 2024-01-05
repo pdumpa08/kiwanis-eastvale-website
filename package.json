@@ -1,0 +1,15 @@
+{
+  "name": "kiwanis-eastvale-website",
+  "version": "1.0.0",
+  "description": "A website for Eastvale Kiwanis, a well-known youth group within the City of Eastvale.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^10.7.1"
+  }
+}
