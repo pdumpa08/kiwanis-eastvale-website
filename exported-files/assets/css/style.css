@@ -9,8 +9,11 @@ body {
   color: #FAFAFA;
 }
 
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets\img\Kiwanis_cleanup.jpg");
+}
 h1 {
-  color: #030303 !important;
+  color: #003874 !important;
   font-size: 100px;
   font-weight: bold;
   line-height: 0.95;
