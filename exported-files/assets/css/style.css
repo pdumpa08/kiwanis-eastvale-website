@@ -93,3 +93,43 @@ p {
   }
 } 
   
+body, html {
+  height: 100%;
+}
+
+ /* blurring the image */
+ .gfg {
+  filter: blur(5px);
+  width: 100%;
+}
+
+
+
+
+
+/* Designing button */
+.logo button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer
+}
+
+.logo button:hover {
+  background-color: green;
+  color: white;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+text-align: left;
+position: absolute;
+top: 50%;
+left: 25%;
+transform: translate(-50%, -50%);
+color: white;
+}
