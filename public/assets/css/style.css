@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito Sans:700|Nunito Sans:400');
 
-body {
-  font-family: 'Nunito Sans';
-  font-weight: 400;
-}
 
 .btn {
   color: #FAFAFA;
@@ -30,9 +25,15 @@ h2 {
 
 p {
   color: #999999 !important;
-  font-size: 24.28px;
+  font-size: 21.28px;
   line-height: 2.0;
   margin-bottom: 50px;
+}
+
+footer {
+  width: 100vw; 
+  position: absolute; 
+  left: 0px;
 }
 
 :root[data-theme="light"] {
