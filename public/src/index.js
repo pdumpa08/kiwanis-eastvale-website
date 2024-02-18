@@ -46,6 +46,7 @@ window.onload = function() {
 
       var title = document.createElement('h1')
       title.setAttribute('id', 'title')
+      title.setAttribute('style', 'transform: translateX(-15%)')
       title.textContent = 'Kiwanis Community'
 
       title_container.append(exit)
@@ -55,7 +56,6 @@ window.onload = function() {
     }
     // create_join_form() creates the join form
     create_join_form(){
-      // YOU MUST HAVE (PARENT = THIS). OR NOT. I'M NOT YOUR BOSS!😂
       var parent = this;
 
       var join_container = document.createElement('div')
@@ -110,10 +110,10 @@ window.onload = function() {
     }
     // create_load() creates a loading circle that is used in the chat container
     create_load(container_id){
-      // YOU ALSO MUST HAVE (PARENT = THIS). BUT IT'S WHATEVER THO.
+      // YOU ALSO MUST HAVE (PARENT = THIS).
       var parent = this;
 
-      // This is a loading function. Something cool to have.
+      // This is a loading function.
       var container = document.getElementById(container_id)
       container.innerHTML = ''
 
