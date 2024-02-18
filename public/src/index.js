@@ -46,7 +46,7 @@ window.onload = function() {
 
       var title = document.createElement('h1')
       title.setAttribute('id', 'title')
-      title.setAttribute('style', 'transform: translateX(-15%)')
+      title_inner_container.setAttribute('style', 'transform: translateX(-15%)')
       title.textContent = 'Kiwanis Community'
 
       title_container.append(exit)
