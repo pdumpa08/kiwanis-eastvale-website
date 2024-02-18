@@ -34,6 +34,11 @@ window.onload = function() {
     // create_title() is used to create the title
     create_title(){
       // This is the title creator. 🎉
+      var exit = document.createElement('a')
+      exit.setAttribute('href', 'index.html')
+      exit.setAttribute('style', 'color: white; text-decoration: none; padding-left: 3vw')
+
+      exit.textContent = 'Home'
       var title_container = document.createElement('div')
       title_container.setAttribute('id', 'title_container')
       var title_inner_container = document.createElement('div')
@@ -43,6 +48,7 @@ window.onload = function() {
       title.setAttribute('id', 'title')
       title.textContent = 'Kiwanis Community'
 
+      title_container.append(exit)
       title_inner_container.append(title)
       title_container.append(title_inner_container)
       document.body.append(title_container)
