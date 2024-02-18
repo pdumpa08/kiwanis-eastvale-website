@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito Sans:700|Nunito Sans:400');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   font-family: 'Nunito Sans';
   font-weight: 400;
@@ -9,9 +13,6 @@ body {
   color: #FAFAFA;
 }
 
-.hero-image {
-  background-image: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-}
 h1 {
   color: #003874 !important;
   font-size: 100px;
@@ -97,16 +98,6 @@ body, html {
   height: 100%;
 }
 
- /* blurring the image */
- .gfg {
-  filter: blur(5px);
-  width: 100%;
-}
-
-
-
-
-
 /* Designing button */
 .logo button {
   border: none;
@@ -126,10 +117,8 @@ body, html {
 
 /* Place text in the middle of the image */
 .hero-text {
-text-align: left;
 position: absolute;
 top: 50%;
 left: 25%;
-transform: translate(-50%, -50%);
 color: white;
 }
