@@ -38,6 +38,7 @@ window.onload = function() {
       exit.setAttribute('href', 'index.html')
       exit.setAttribute('style', 'color: white; text-decoration: none; padding-left: 3vw')
 
+
       exit.textContent = 'Home'
       var title_container = document.createElement('div')
       title_container.setAttribute('id', 'title_container')
