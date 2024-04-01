@@ -5,13 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Gala</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Competences-Grid---3-Columns---Hover-Effect-Pop---Icons.css">
-    <link rel="stylesheet" href="assets/css/dh-row-text-image-right.css">
-    <link rel="stylesheet" href="assets/css/divider-text-middle.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark-icons.css">
-    <link rel="stylesheet" href="assets/css/Section-Title.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/output.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
@@ -19,62 +13,62 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" style="padding-left: 3vw;" href="index.html">Kiwanis Eastvale</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto" style="padding-right: 3vw;">
-            <li class="nav-item active">
-              <a class="nav-link" href="events.html">Events</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="gala.html">Gala</a>
+    <nav class="w-screen absolute z-40">
+        <div class="max-w-screen-xl flex flex-wrap items-center mx-auto justify-between p-4">
+          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <span class="self-center text-2xl whitespace-nowrap dark:text-white">Kiwanis Eastvale</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700">
+              <li class="self-center">
+                <a href="projects.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-0 dark:text-white md:dark:hover:text-blue-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="volunteer.html">Volunteering</a>
+              <li class="self-center">
+                <a href="gala.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-0 dark:text-white md:dark:hover:text-blue-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gala</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="community.html">Community</a>
+              <li class="self-center">
+                <a href="events.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-0 dark:text-white md:dark:hover:text-blue-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Events</a>
+              </li>
+              <li class="self-center">
+                <a href="community.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-0 dark:text-white md:dark:hover:text-blue-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Community</a>
               </li>
               <li>
                 <a href="donate_form.html">
-                    <button type="button" class="btn btn-primary mx-2">
-                        Donate Now
-                    </button>
+                  <button class="text-white py-2 px-4 rounded bg-blue-800">
+                    Donate Now
+                  </button>
                 </a>
               </li>
-          </ul>
+            </ul>
+          </div>
         </div>
-    </nav> 
+      </nav>
 
-    <i class="fas fa-band-aid"></i>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl" style="padding-right: 0px;padding-left: 0px;width: 50vw;">
-                <h1 style="padding-top: 7.5%;text-align: center;">A Salute to Service</h1>
-                <p style="font-weight: normal;margin-top: 0px;color: #AAAAAA; text-align: center;">on Feb 25th, 2024</p>
-                <div class="row">
-                    <div class="col text-center" style="margin-left: 17.5px;">
-                        <a class="btn btn-primary" href="gala_form.html" e="button" style="font-weight: normal;background: #b5995a;border-style: none;font-size: 24.28px; margin: 0px 24px 24px 24px;">Join Us</a>
-                </div>
-            </div>
-        </div>
+    <div>
+        <h1 class="flex justify-center mb-6" style="padding-top: 7.5%;">A Salute to Service</h1>
+        <p class="flex justify-center mb-6">on Feb 25th, 2024</p>
+        <a class="flex justify-center" href="gala_form.html">
+            <button class="text-white py-2 px-4 text-xl rounded bg-yellow-700">
+                Join Us
+            </button>
+        </a>
     </div>
 
-    <div class="container-fluid" style="padding-bottom: 5%;">
-        <div class="row justify-content-end">
-            <div class="col fade-in-image-a text-center" style="transform: translate(5%, -25%)">
-                <img src="assets/img/pvsa-silver_orig.png">
-            </div>
-            <div class="col fade-in-image text-center" id="myDivId" style="position: fixed;transform: translate(6.5%, 0%);">
-                <img src="assets/img/IMG_1935-1024x768-removebg-preview.png" style="width: 30%;"/>
-            </div>
-            <div class="col fade-in-image-t" style="transform: translate(30%, -25%)">
-                <img src="assets/img/PVSA-Pin-bronze.png">
-            </div>
+    <div class="flex justify-center">
+        <div class="fade-in-image-a" style="transform: translate(-150%, -25%);">
+            <img class="scale-125" src="assets/img/pvsa-silver_orig.png">
+        </div>
+        <div class="fade-in-image" style="position: fixed;">
+            <img class="scale-90" src="assets/img/IMG_1935-1024x768-removebg-preview.png"/>
+        </div>
+        <div class="fade-in-image-t" style="transform: translate(150%, -25%);">
+            <img class="scale-125" src="assets/img/PVSA-Pin-bronze.png" >
         </div>
     </div>
 
