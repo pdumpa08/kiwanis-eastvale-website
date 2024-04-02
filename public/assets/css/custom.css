@@ -1,0 +1,62 @@
+.fade-in-image {
+    animation: fadeInDown 2s;
+  }
+  
+  .fade-in-image-t {
+    animation: fadeInDownT 2s;
+  }
+  
+  .fade-in-image-a {
+    animation: fadeInDownA 2s;
+  }
+  
+  @keyframes fadeInDownA {
+    0% {
+      opacity: 0;
+      transform: translate(-75%, 100px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(-150%, -25%);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translate(0, 100px);
+      position: fixed;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0, 0%);
+      position: fixed;
+    }
+  }
+  
+  @keyframes fadeInDownT {
+    0% {
+      opacity: 0;
+      transform: translate(75%, 100px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(150%, -25%);
+    }
+  }
+
+  .blue {
+    color: #003874;
+  }
+  
+  .gold {
+    color: #b49759;
+  }
+
+  button:hover {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(30 58 138 / var(--tw-bg-opacity)) !important;
+  }

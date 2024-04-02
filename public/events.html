@@ -4,125 +4,164 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Calendar</title>
-    <link rel="stylesheet" href="stylestwo.css" />
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" style="padding-left: 3vw;" href="index.html">Kiwanis Eastvale</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto" style="padding-right: 3vw;">
-          <li class="nav-item active">
-            <a class="nav-link" href="events.html">Events</a>
-          </li>
-          <li class="nav-item active">
-              <a class="nav-link" href="gala.html">Gala</a>
+    <nav class="w-screen z-40">
+      <div class="max-w-screen-xl flex flex-wrap items-center mx-auto justify-between p-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span class="self-center  text-2xl whitespace-nowrap ">Kiwanis Eastvale</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+            <li class="self-center">
+              <a href="projects.html" class="block py-2 px-3 rounded  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-0  md:dark:hover:text-blue-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="volunteer.html">Volunteering</a>
+            <li class="self-center">
+              <a href="gala.html" class="block py-2 px-3 rounded  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-0  md:dark:hover:text-blue-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gala</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="community.html">Community</a>
+            <li class="self-center">
+              <a href="events.html" class="block py-2 px-3 rounded  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-0  md:dark:hover:text-blue-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Events</a>
+            </li>
+            <li class="self-center">
+              <a href="community.html" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-0  md:dark:hover:text-blue-800 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Community</a>
             </li>
             <li>
               <a href="donate_form.html">
-                <button type="button" class="btn btn-primary mx-2">
-                    Donate Now
+                <button class=" py-2 px-4 text-white rounded bg-blue-800">
+                  Donate Now
                 </button>
               </a>
             </li>
-        </ul>
-      </div>
-  </nav> 
-
-    <div class="event-container">
-
-      <div class="event">
-        <div class="event-left">
-          <div class="event-date">
-            <div class="date">3</div>
-            <div class="month">Feb</div>
-          </div>
-        </div>
-
-        <div class="event-right">
-            <h3 class="event-title">Street Cleanup</h3>
-
-            <div class="event-description">
-            We cleanup Scholar Way from Citrus Street to Limonite Avenue.
-        </div>
-
-        <div class="container">
-            <div class="event-timing">
-                <img src="assets/img/time.png" alt="" /> 10:00 am
-            </div>
-
-            <a class="signup" href="https://www.eventbrite.com/e/test-tickets-789914133437">
-                Signup Now!
-            </a>
-        </div>
+          </ul>
         </div>
       </div>
+    </nav>
 
-      <div class="event">
-        <div class="event-left">
-          <div class="event-date">
-            <div class="date">25</div>
-            <div class="month">Feb</div>
-          </div>
-        </div>
+    <p class="text-7xl font-extrabold text-center px-32 pt-10 mb-6"><span class="gold">Kiwanis</span> <span class="blue">Events</span></p>
+    <p class="px-32 text-center">
+      At our core, we are a volunteering organization. We provide opportjnities to work with various community groups including the City of Eastvale, Jurupa Community Services District (JCSD), Eleanor Roosevelt High School's Key Club, and more. Community service hours earned through these events determine members' eligibility to earn the President's Volutneer Service Award at our end-of-year banquet.
+    </p>
 
-        <div class="event-right">
-          <h3 class="event-title">A Salute to Service</h3>
-
-          <div class="event-description">
-            We recognize our most active members with the President's Volutneer Service Award.
-          </div>
-
-          <div class="container">
-            <div class="event-timing d-flex">
-                <img src="assets/img/time.png" alt="" /> 6:00 pm
-            </div>
-
-            <a class="signup d-flex" href="gala_form.html">
-                RSVP Now!
+    <div class="flex justify-center px-32">
+      <div class="max-w-sm mr-12 bg-white border border-gray-200 rounded-lg shadow  ">
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Street Cleanup</h5>
             </a>
-        </div>
-
+            <p class="mb-3 text-xl text-gray-700 dark:text-gray-400">We cleanup Scholar Way from Schleisman Avenue to Citrus Street</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+              Signup Now
+               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </a>
         </div>
       </div>
-
-      <div class="event">
-        <div class="event-left">
-          <div class="event-date">
-            <div class="date">28</div>
-            <div class="month">Feb</div>
-          </div>
-        </div>
-
-        <div class="event-right">
-          <h3 class="event-title">City Council Meeting</h3>
-
-          <div class="event-description">
-            We attend one of our city's monthly meetings to understand current events in our city and better support the community around us.
-          </div>
-
-          <div class="container">
-            <div class="event-timing d-flex">
-                <img src="assets/img/time.png" alt="" /> 10:30 am
-            </div>
-
-            <a class="signup d-flex" href="https://www.signupgenius.com/go/10C0849ADAB2EAAFACE9-45814774-charity#/">
-                Signup Now!
+      <div class="max-w-sm ml-10 bg-white border border-gray-200 rounded-lg shadow  ">
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Street Cleanup</h5>
             </a>
-        </div>
-
+            <p class="mb-3 text-xl text-gray-700 dark:text-gray-400">We cleanup Scholar Way from Schleisman Avenue to Citrus Street</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+              Signup Now
+               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </a>
         </div>
       </div>
     </div>
+
+    <div class="flex justify-center px-32 pt-12">
+      <div class="max-w-sm mr-12 bg-white border border-gray-200 rounded-lg shadow  ">
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Street Cleanup</h5>
+            </a>
+            <p class="mb-3 text-xl text-gray-700 dark:text-gray-400">We cleanup Scholar Way from Schleisman Avenue to Citrus Street</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+              Signup Now
+               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </a>
+        </div>
+      </div>
+      <div class="max-w-sm ml-10 bg-white border border-gray-200 rounded-lg shadow  ">
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Street Cleanup</h5>
+            </a>
+            <p class="mb-3 text-xl text-gray-700 dark:text-gray-400">We cleanup Scholar Way from Schleisman Avenue to Citrus Street</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+              Signup Now
+               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center px-32 pt-12 pb-12">
+      <div class="max-w-sm mr-12 bg-white border border-gray-200 rounded-lg shadow  ">
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Street Cleanup</h5>
+            </a>
+            <p class="mb-3 text-xl text-gray-700 dark:text-gray-400">We cleanup Scholar Way from Schleisman Avenue to Citrus Street</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+              Signup Now
+               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </a>
+        </div>
+      </div>
+      <div class="max-w-sm ml-10 bg-white border border-gray-200 rounded-lg shadow  ">
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Street Cleanup</h5>
+            </a>
+            <p class="mb-3 text-xl text-gray-700 dark:text-gray-400">We cleanup Scholar Way from Schleisman Avenue to Citrus Street</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+              Signup Now
+               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-white rounded-lg m-4">
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">Kiwanis Eastvale™</a>. All Rights Reserved.
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          <li>
+              <a href="#" class="hover:underline me-4 md:me-6">About</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline">Contact</a>
+          </li>
+      </ul>
+      </div>
+    </footer>
   </body>
 </html>
