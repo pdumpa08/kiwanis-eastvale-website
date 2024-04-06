@@ -9,6 +9,27 @@
   .fade-in-image-a {
     animation: fadeInDownA 2s;
   }
+
+  h1 {
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 0.95;
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 0.95;
+    margin-bottom: 30px;
+  }
+  
+  p {
+    color: #888888;
+    font-size: 24.28px;
+    line-height: 2.0;
+    margin-bottom: 50px;
+  }
   
   @keyframes fadeInDownA {
     0% {
@@ -59,4 +80,126 @@
   button:hover {
     --tw-bg-opacity: 1 !important;
     background-color: rgb(30 58 138 / var(--tw-bg-opacity)) !important;
+  }
+
+  @media (max-width:768px){
+
+    p {
+      color: #888888;
+      font-size: 16px;
+      line-height: 2.0;
+      margin-bottom: 12px !important;
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    h1 {
+      font-size: 35px !important;
+      font-weight: bold;
+      line-height: 0.95;
+      margin-bottom: 12px !important;
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+    
+    h2 {
+      color: #003874;
+      font-size: 20px !important;
+      font-weight: bold;
+      line-height: 0.95;
+      margin-bottom: 16px !important;
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    a {
+      margin-bottom: 16px !important;
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    div {
+      padding-bottom: 20px !important;
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    *:not(button, .card, .card-button) {
+      padding-left: 4px !important;
+      padding-right: 4px !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    iframe {
+      min-width: 500px;
+    }
+
+    .logo {
+      scale: 85%;
+      transform: translate(-100px, 50px);
+      padding-bottom: 35px;
+    }
+
+    .hero-title {
+      color: white !important;
+      min-width: 300px;
+    }
+
+    .left {
+      margin-right: 0px;
+    }
+
+    .card-button {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+
+    .pcard {
+      height: 300px;
+    }
+    
+    .pinfo {
+      transform: translateY(125px);
+    }
+
+    .silver {
+      display: none;
+    }
+
+    .bronze {
+      display: none;
+    }
+
+    .join {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+
+    .ggold {
+      display: none;
+    }
+
+    .body {
+      transform: translateY(-300px);
+    }
+
+    .sil {
+      text-align: center !important;
+      justify-content: center !important;
+    }
+
+    .gol {
+      text-align: center !important;
+      justify-content: center !important;
+    }
+
+    .bro {
+      text-align: center !important;
+      justify-content: center !important;
+      display: block;
+    }
+
   }
