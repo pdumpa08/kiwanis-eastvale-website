@@ -13,29 +13,6 @@ body {
   color: #FAFAFA;
 }
 
-h1 {
-  color: #003874 !important;
-  font-size: 100px;
-  font-weight: bold;
-  line-height: 0.95;
-  margin-bottom: 50px;
-}
-
-h2 {
-  color: #030303 !important;
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 0.95;
-  margin-bottom: 30px;
-}
-
-p {
-  color: #888888;
-  font-size: 24.28px;
-  line-height: 2.0;
-  margin-bottom: 50px;
-}
-
 :root[data-theme="light"] {
   --text: #000000;
   --background: #fafafa;

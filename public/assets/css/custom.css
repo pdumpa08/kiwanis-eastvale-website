@@ -103,7 +103,6 @@
     }
     
     h2 {
-      color: #003874;
       font-size: 20px !important;
       font-weight: bold;
       line-height: 0.95;
@@ -200,6 +199,24 @@
       text-align: center !important;
       justify-content: center !important;
       display: block;
+    }
+
+    .gg {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    .wh {
+      padding-bottom: 0 !important;
+      margin-bottom: 0 !important;
+    }
+
+    #navbar-default {
+      background-color: white;
+    }
+
+    .block {
+      color: #003874 !important;
     }
 
   }
