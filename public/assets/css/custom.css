@@ -85,7 +85,7 @@
   @media (max-width:768px){
 
     p {
-      color: #888888;
+      color: #777777;
       font-size: 16px;
       line-height: 2.0;
       margin-bottom: 12px !important;
@@ -181,10 +181,6 @@
       display: none;
     }
 
-    .body {
-      transform: translateY(-300px);
-    }
-
     .sil {
       text-align: center !important;
       justify-content: center !important;
@@ -219,4 +215,16 @@
       color: #003874 !important;
     }
 
+    .ticket {
+      font-size: 20px !important;
+      line-height: 28px !important;
+    }
+
+    .tickd {
+      transform: translateY(-175px);
+    }
+
+    .top {
+      height: 25%;
+    }
   }
