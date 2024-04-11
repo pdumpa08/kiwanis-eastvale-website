@@ -97,10 +97,6 @@
       margin-top: 0 !important;
     }
 
-    .page-content {
-      margin: 0;
-    }
-
     h1 {
       font-size: 35px !important;
       font-weight: bold;
@@ -241,11 +237,6 @@
 
     .cal {
       display: none;
-    }
-
-    .body {
-      overflow-x: hidden;
-      overflow-x: clip !important;
     }
 
   }
