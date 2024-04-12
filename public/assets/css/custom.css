@@ -177,7 +177,7 @@
     }
 
     .pcard {
-      background-image: url('/public/assets/img/unnamed.jpg') !important;
+      background-image: url('unnamed.jpg') !important;
     }
 
     .bronze {
