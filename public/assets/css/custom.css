@@ -63,7 +63,7 @@
   }
 
   .card-button {
-    align-items: flex-end;
+    bottom: 0%;
   }
   
   @keyframes fadeInDownT {
