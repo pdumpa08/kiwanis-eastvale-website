@@ -84,6 +84,7 @@ body{
     text-align: center;
     background-color: Transparent;
     border-bottom: 2px dashed #b5995a;
+    border-top: none;
   
   }
   #join_input:focus{
