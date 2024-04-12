@@ -2,7 +2,7 @@
     animation: fadeInDown 2s;
   }
   
-  html {
+  html, .non {
     width: 100%;
     overflow-x: hidden;
   }
@@ -180,6 +180,11 @@
       background-image: url('unnamed.jpg') !important;
     }
 
+    .tracking-tight {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
     .bronze {
       display: none;
     }
@@ -251,8 +256,8 @@
     }
 
     .page-header {
-      width: 105vw;
-      transform: translateX(-5vw);
+      width: 102vw;
+      transform: translateX(-2vw);
     }
 
     footer {
