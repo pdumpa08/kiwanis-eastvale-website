@@ -169,7 +169,7 @@
     }
     
     .pinfo {
-      transform: translateY(100px);
+      transform: translateY(125px);
     }
 
     .silver {
@@ -177,7 +177,7 @@
     }
 
     .pcard {
-      background-image: urL('/public/assets/img/unnamed.jpg') !important;
+      background-image: url('/public/assets/img/unnamed.jpg') !important;
     }
 
     .bronze {
