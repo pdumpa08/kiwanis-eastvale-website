@@ -135,7 +135,7 @@
     }
 
     iframe {
-      min-width: 250px;
+      width: 350px;
       max-height: 400px;
     }
 
@@ -241,12 +241,12 @@
     }
 
     .page-content {
-      width: 110vw;
+      width: 105vw;
       transform: translateX(-5vw);
     }
 
     .page-header {
-      width: 110vw;
+      width: 105vw;
       transform: translateX(-5vw);
     }
 
