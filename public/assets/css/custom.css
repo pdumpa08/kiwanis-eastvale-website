@@ -61,6 +61,10 @@
       position: fixed;
     }
   }
+
+  .card-button {
+    align-items: flex-end;
+  }
   
   @keyframes fadeInDownT {
     0% {
