@@ -10,6 +10,11 @@
   .fade-in-image-t {
     animation: fadeInDownT 2s;
   }
+
+  .pcard {
+    background-size: cover;
+    background-position: center;
+  }
   
   .fade-in-image-a {
     animation: fadeInDownA 2s;
@@ -178,10 +183,6 @@
 
     .silver {
       display: none;
-    }
-
-    .pcard {
-      background-image: url('unnamed.jpg') !important;
     }
 
     .tracking-tight {
