@@ -1,8 +1,12 @@
 .fade-in-image {
     animation: fadeInDown 2s;
   }
-
+  
   html {
+    overflow-x: hidden;
+  }
+
+  body {
     overflow-x: hidden;
   }
   
@@ -135,7 +139,7 @@
     }
 
     iframe {
-      min-width: 500px;
+      min-width: 250px;
       max-height: 400px;
     }
 
@@ -148,7 +152,7 @@
     .hero-title {
       color: white !important;
       min-width: 300px;
-      transform: translateX(-50px);
+      transform: translateX(-100px);
     }
 
     .left {
@@ -164,10 +168,11 @@
 
     .pcard {
       height: 300px;
+      min-width: 115px !important;
     }
     
     .pinfo {
-      transform: translateY(125px);
+      transform: translateY(100px);
     }
 
     .silver {
@@ -237,6 +242,61 @@
 
     .cal {
       display: none;
+    }
+
+    .page-content {
+      width: 110vw;
+      transform: translateX(-5vw);
+    }
+
+    .page-header {
+      width: 110vw;
+      transform: translateX(-5vw);
+    }
+
+    footer {
+      transform: translateY(8vh);
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .cen {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .bot {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .profoot {
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .card {
+      max-width: 150px !important;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .left {
+      padding-left: 5px;
+    }
+
+    .right {
+      padding-right: 5px;
+    }
+
+    .body {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .bott {
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
 
   }
