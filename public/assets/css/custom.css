@@ -91,7 +91,7 @@
     background-color: rgb(30 58 138 / var(--tw-bg-opacity)) !important;
   }
 
-  @media (max-width:768px){
+  @media (max-width:768px) {
 
     p {
       color: #777777;

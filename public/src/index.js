@@ -36,7 +36,7 @@ window.onload = function() {
       // This is the title creator. 🎉
       var exit = document.createElement('a')
       exit.setAttribute('href', 'index.html')
-      exit.setAttribute('style', 'color: white; text-decoration: none; padding-left: 3vw')
+      exit.setAttribute('style', 'color: white; text-decoration: none; margin-left: 3vw; width: 80px;')
 
 
       exit.textContent = 'Home'
