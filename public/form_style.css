@@ -93,6 +93,8 @@ form.sign-up-form {
 .heading h2 {
   font-size: 2.1rem;
   font-weight: 600;
+  padding: 0;
+  margin: 0;
   color: #151111;
 }
 
@@ -147,7 +149,7 @@ label {
 }
 
 .input-field.active {
-  border-bottom-color: #151111;
+  border-bottom-color: #b5995a;
 }
 
 .input-field.active + label {
