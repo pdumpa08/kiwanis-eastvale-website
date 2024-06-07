@@ -97,6 +97,10 @@
     background-color: rgb(30 58 138 / var(--tw-bg-opacity)) !important;
   }
 
+  .toggle:hover {
+    background: none !important;
+  }
+
   @media (max-width:768px) {
 
     p {
@@ -106,6 +110,18 @@
       margin-bottom: 12px !important;
       padding-top: 0 !important;
       margin-top: 0 !important;
+    }
+
+    .home {
+      transform: translateY(20%);
+    }
+
+    .toggle {
+      background: none;
+    }
+
+    .nav-list {
+      background-color: white;
     }
 
     h1 {
@@ -231,7 +247,7 @@
     }
 
     #navbar-default {
-      background-color: white;
+      align-items: center;
     }
 
     .block {

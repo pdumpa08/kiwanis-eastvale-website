@@ -16,7 +16,7 @@ window.onload = function() {
   firebase.initializeApp(firebaseConfig);
   // This is very IMPORTANT!! We're going to use "db" a lot.
   var db = firebase.database()
-  // We're going to use oBjEcT OrIeNtEd PrOgRaMmInG. Lol
+  // This is the main class. It's called MEME_CHAT
   class MEME_CHAT{
     // Home() is used to create the home page
     home(){
