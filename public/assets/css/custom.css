@@ -97,6 +97,11 @@
     background-color: rgb(30 58 138 / var(--tw-bg-opacity)) !important;
   }
 
+  .card-button:hover {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(30 58 138 / var(--tw-bg-opacity)) !important;
+  }
+
   .toggle:hover {
     background: none !important;
   }
@@ -110,6 +115,12 @@
       margin-bottom: 12px !important;
       padding-top: 0 !important;
       margin-top: 0 !important;
+    }
+
+    .card-button {
+      bottom: 5%;
+      padding-top: 7px !important;
+      padding-bottom: 7px !important;
     }
 
     .home {
@@ -175,7 +186,7 @@
     .hero-title {
       color: white !important;
       min-width: 300px;
-      transform: translateX(-100px);
+      transform: translateX(-160px);
     }
 
     .left {
@@ -257,6 +268,7 @@
     .ticket {
       font-size: 20px !important;
       line-height: 28px !important;
+      margin-right: 10%;
     }
 
     .tickd {
