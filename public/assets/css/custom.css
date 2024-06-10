@@ -105,8 +105,37 @@
   .toggle:hover {
     background: none !important;
   }
+/* 
+  .hoverBold:hover {
+    --tw-bg-opacity: 1 !important;
+    color: rgb(180 151 90 / var(--tw-bg-opacity)) !important;
+  } */
+
+  .navUnder {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+  }
+
+  .navUnder:after {
+    content: "";
+    position: absolute;
+    background-color: #b49759;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s
+  }
+
+  .navUnder:hover:after {
+      width: 100%;
+  }
 
   @media (max-width:768px) {
+
+
 
     p {
       color: #777777;

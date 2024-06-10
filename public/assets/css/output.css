@@ -1359,6 +1359,11 @@ body, html {
     --tw-text-opacity: 1;
     color: rgb(30 64 175 / var(--tw-text-opacity));
   }
+
+  .md\:hover\:text-gold-800:hover{
+    --tw-text-opacity: 1;
+    color: rgb(180, 151, 90 / var(--tw-text-opacity));
+  }   
 }
 
 .rtl\:rotate-180:where([dir="rtl"], [dir="rtl"] *){
