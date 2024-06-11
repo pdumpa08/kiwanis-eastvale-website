@@ -132,6 +132,14 @@
       width: 100%;
   }
 
+  .goldButton {
+    background: #b49759;
+  }
+
+  .goldButton:hover {
+      transition: 0.2s ease-in !important;
+      background-color: #A38B51 !important;
+  }
   @media (max-width:768px) {
 
 

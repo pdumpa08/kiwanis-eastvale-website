@@ -161,7 +161,7 @@ label {
   display: inline-block;
   width: 100%;
   height: 43px;
-  background-color: #151111;
+  background-color: #b5995a;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -172,7 +172,8 @@ label {
 }
 
 .sign-btn:hover {
-  background-color: #b5995a;
+  transition: 0.2s ease-in;
+  background-color: #917B48;
 }
 
 .text {
