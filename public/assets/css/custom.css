@@ -1,12 +1,7 @@
 .fade-in-image {
     animation: fadeInDown 2s;
   }
-  
-  html, .non {
-    width: 100%;
-    overflow-x: hidden;
-  }
-  
+
   .fade-in-image-t {
     animation: fadeInDownT 2s;
   }
@@ -134,6 +129,13 @@
 
   @media (max-width:768px) {
 
+    body {
+      overflow-x: hidden;
+    }
+
+    .page-content {
+      width: 100%;
+    }
 
 
     p {
@@ -187,13 +189,13 @@
       margin-top: 0 !important;
     }
 
-    div {
+    div:not(.page-content, .main-content, .fog) {
       padding-bottom: 20px !important;
       padding-top: 0 !important;
       margin-top: 0 !important;
     }
 
-    *:not(button, .card, .card-button) {
+    *:not(button, .card, .card-button, body, html, .page-content) {
       padding-left: 4px !important;
       padding-right: 4px !important;
       margin-left: 0 !important;
@@ -312,18 +314,11 @@
       display: none;
     }
 
-    .page-content {
-      width: 105vw;
-      transform: translateX(-5vw);
-    }
-
     .page-header {
-      width: 103vw;
-      transform: translateX(-3vw);
+      width: 100%;
     }
 
     footer {
-      transform: translateY(8vh);
       padding-top: 0;
       margin-top: 0;
     }

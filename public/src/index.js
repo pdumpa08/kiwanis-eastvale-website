@@ -35,11 +35,10 @@ window.onload = function() {
     create_title(){
       // This is the title creator. 🎉
       var exit = document.createElement('a')
+      exit.setAttribute('style', 'color: white; text-decoration: none; margin-left: 6vw; scale: 1.5;')
+      exit.innerHTML = '<i style="width: 10%; height: auto" class="fas fa-sign-out-alt fa-rotate-180"></i>'
       exit.setAttribute('href', 'index.html')
-      exit.setAttribute('style', 'color: white; text-decoration: none; margin-left: 3vw; width: 80px;')
 
-
-      exit.textContent = 'Home'
       var title_container = document.createElement('div')
       title_container.setAttribute('id', 'title_container')
       var title_inner_container = document.createElement('div')
