@@ -1191,6 +1191,10 @@ input:checked + .toggle-bg{
   margin-bottom: 2rem;
 }
 
+.me-2{
+  margin-inline-end: 0.5rem;
+}
+
 .me-4{
   margin-inline-end: 1rem;
 }
@@ -1225,18 +1229,6 @@ input:checked + .toggle-bg{
 
 .mt-4{
   margin-top: 1rem;
-}
-
-.me-2{
-  margin-inline-end: 0.5rem;
-}
-
-.me-1{
-  margin-inline-end: 0.25rem;
-}
-
-.me-12{
-  margin-inline-end: 3rem;
 }
 
 .block{
@@ -1347,6 +1339,10 @@ input:checked + .toggle-bg{
   width: 20rem;
 }
 
+.w-auto{
+  width: auto;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1355,20 +1351,12 @@ input:checked + .toggle-bg{
   width: 100vw;
 }
 
-.w-auto{
-  width: auto;
-}
-
 .max-w-screen-xl{
   max-width: 1280px;
 }
 
 .max-w-sm{
   max-width: 24rem;
-}
-
-.max-w-full{
-  max-width: 100%;
 }
 
 .flex-1{
@@ -1792,6 +1780,11 @@ input:checked + .toggle-bg{
   line-height: 1;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1807,11 +1800,6 @@ input:checked + .toggle-bg{
   line-height: 1.75rem;
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -1820,16 +1808,16 @@ input:checked + .toggle-bg{
   font-weight: 800;
 }
 
+.font-light{
+  font-weight: 300;
+}
+
 .font-medium{
   font-weight: 500;
 }
 
 .font-semibold{
   font-weight: 600;
-}
-
-.font-light{
-  font-weight: 300;
 }
 
 .uppercase{
@@ -1887,13 +1875,13 @@ input:checked + .toggle-bg{
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-inherit{
+  color: inherit;
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-inherit{
-  color: inherit;
 }
 
 .antialiased{
@@ -2094,6 +2082,11 @@ body, html {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-900:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -2268,18 +2261,6 @@ body, html {
 
   .md\:mt-0{
     margin-top: 0px;
-  }
-
-  .md\:me-3{
-    margin-inline-end: 0.75rem;
-  }
-
-  .md\:me-4{
-    margin-inline-end: 1rem;
-  }
-
-  .md\:me-5{
-    margin-inline-end: 1.25rem;
   }
 
   .md\:block{
