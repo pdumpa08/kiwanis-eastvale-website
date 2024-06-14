@@ -183,10 +183,16 @@
       margin-top: 0 !important;
     }
 
-    a {
+    a:not(.log) {
       margin-bottom: 16px !important;
       padding-top: 0 !important;
       margin-top: 0 !important;
+    }
+
+    .log {
+      scale: 1.5;
+      padding-right: 0 !important;
+      margin-right: 0 !important;
     }
 
     div:not(.page-content, .main-content, .fog) {
@@ -195,7 +201,7 @@
       margin-top: 0 !important;
     }
 
-    *:not(button, .card, .card-button, body, html, .page-content) {
+    *:not(button, .card, .card-button, body, html, .page-content, .log) {
       padding-left: 4px !important;
       padding-right: 4px !important;
       margin-left: 0 !important;
@@ -291,7 +297,7 @@
       align-items: center;
     }
 
-    .block {
+    .block:not(.log) {
       color: #003874 !important;
     }
 
