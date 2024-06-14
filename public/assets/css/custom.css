@@ -2,6 +2,12 @@
     animation: fadeInDown 2s;
   }
 
+  /* 
+  * {
+    outline: 1px solid #f00 !important;
+  }
+  */
+
   h2 {
     font-family: "Inter", sans-serif !important;
     font-optical-sizing: auto !important;
@@ -136,6 +142,84 @@
       width: 100%;
   }
 
+  @media (min-width:769px) and (max-width:1024px) {
+    .hero-title {
+      width: 60%;
+    }
+
+    p {
+      margin-bottom: 0px;
+    }
+
+    .end-gold {
+      display: none;
+    }
+
+    .end-silver {
+      display: none;
+    }
+
+    .end-bronze {
+      display: none;
+    }
+
+    .top {
+      height: 60%;
+    }
+
+    .logo {
+      scale: 85%;
+      transform: translate(-120px, 0px);
+      padding-bottom: 35px;
+    }
+
+    .hero-title {
+      color: white !important;
+      min-width: 300px;
+      transform: translate(-140px, -50px);
+    }
+
+    .silver {
+      scale: 85%;
+    }
+
+    .bronze {
+      scale: 85%;
+    }
+
+    .ggold {
+      scale: 85%;
+    }
+
+    .lef, .rig {
+      padding: 0% !important;
+    }
+
+    @keyframes fadeInDownT {
+      0% {
+        opacity: 0;
+        transform: translate(50%, 100px);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: translate(150%, -25%);
+      }
+    }
+
+    @keyframes fadeInDownA {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, 100px);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: translate(-150%, -25%);
+      }
+    }
+  }
+
   @media (max-width:768px) {
 
     body {
@@ -231,7 +315,7 @@
     .hero-title {
       color: white !important;
       min-width: 300px;
-      transform: translateX(-160px);
+      transform: translateX(-240px);
     }
 
     .left {
@@ -254,26 +338,26 @@
       transform: translateY(125px);
     }
 
-    .silver {
-      display: none;
-    }
-
     .tracking-tight {
       font-size: 20px;
       line-height: 20px;
+    }
+
+    .silver {
+      display: none;
     }
 
     .bronze {
       display: none;
     }
 
+    .ggold {
+      display: none;
+    }
+
     .join {
       margin-bottom: 0px;
       padding-bottom: 0px;
-    }
-
-    .ggold {
-      display: none;
     }
 
     .sil {
