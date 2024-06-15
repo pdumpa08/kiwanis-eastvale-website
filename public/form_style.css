@@ -8,6 +8,8 @@
   box-sizing: border-box;
 }
 
+
+
 body,
 input {
   font-family: "Poppins", sans-serif;
@@ -124,8 +126,9 @@ form.sign-up-form {
 }
 
 .input-field {
-  position: absolute;
-  width: 100%;
+  display: inline;
+  margin-left: 5%;
+  width: 90%;
   height: 100%;
   background: none;
   border: none;
