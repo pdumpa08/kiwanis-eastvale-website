@@ -198,9 +198,17 @@ window.onload = function() {
         parent.home()
       }
 
+      var report = document.createElement('a')
+      report.setAttribute('href', 'https://forms.gle/GaixoaxugXoGNsN29')
+      report.setAttribute('target', '_blank')
+      report.setAttribute('style', 'color: #1D3354;')
+      report.setAttribute('id', 'report')
+      report.textContent = 'Report Abuse'
+
       chat_logout_container.append(chat_logout)
       chat_input_container.append(chat_input, chat_input_send)
       chat_inner_container.append(chat_content_container, chat_input_container, chat_logout_container)
+      chat_inner_container.append(report)
       chat_container.append(chat_inner_container)
       document.body.append(chat_container)
       // After creating the chat. We immediatly create a loading circle in the 'chat_content_container'

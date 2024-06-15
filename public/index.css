@@ -127,6 +127,7 @@ body{
   #chat_inner_container{
     width: 40%;
     height: 100%;
+    justify-content: center;
   }
   #chat_content_container{
     width: 100%;
@@ -177,7 +178,6 @@ body{
   }
   #chat_logout_container{
     width: 100%;
-    display: inline-block;
   
     display: flex;
     justify-content: center;
@@ -185,6 +185,16 @@ body{
   
     float: left;
     margin-top: 20px;
+  }
+  #report {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 13px;
+    font-family: Varela Round;
+    font-weight: bold;
+    text-decoration: underline;
   }
   #chat_logout{
     color: #1D3354;

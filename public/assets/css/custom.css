@@ -21,6 +21,14 @@
     animation: fadeInDownT 2s;
   }
 
+  .header-content {
+    top: 50%;
+  }
+
+  .hero-title {
+    width: 40%;
+  }
+
   .pcard {
     background-size: cover;
     background-position: center;
@@ -135,17 +143,26 @@
     width: 0;
     left: 0;
     bottom: -5px;
-    transition: 0.3s
+    transition: 0.3s;
   }
 
   .navUnder:hover:after {
       width: 100%;
   }
 
+  .currentNav:after {
+    content: "";
+    position: absolute;
+    background-color: #b49759;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+    width: 100%;
+  }
+
   @media (min-width:769px) and (max-width:1024px) {
-    .hero-title {
-      width: 60%;
-    }
 
     p {
       margin-bottom: 0px;
@@ -169,14 +186,15 @@
 
     .logo {
       scale: 85%;
-      transform: translate(-120px, 0px);
+      transform: translate(-140px, 0px);
       padding-bottom: 35px;
     }
 
     .hero-title {
+      width: 60%;
       color: white !important;
       min-width: 300px;
-      transform: translate(-140px, -50px);
+      transform: translate(-165px, -50px);
     }
 
     .silver {
