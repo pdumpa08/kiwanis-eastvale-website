@@ -171,6 +171,14 @@
             
             var opacity = 1;
             var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+            if (window.scrollY > 800) {
+                element.style.visibility = 'hidden';
+            }
+
+            if (window.scrollY <= 800) {
+                element.style.visibility = 'visible';
+            }
             
             if (width < 1024) {
             if (window.scrollY > 600) {
