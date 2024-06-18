@@ -291,7 +291,6 @@ body{
   
   @media (max-width:980px) {
     #join_input_container {
-      width: 80%;
       padding-bottom: 20px !important;
     }
     * {
