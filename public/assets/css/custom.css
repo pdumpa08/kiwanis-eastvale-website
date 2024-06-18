@@ -55,7 +55,7 @@
   
   p {
     color: #888888;
-    font-size: 24.28px;
+    font-size: 20px;
     line-height: 2.0;
     margin-bottom: 50px;
   }
@@ -110,7 +110,7 @@
     color: #b49759;
   }
 
-  button:hover {
+  button:hover:not(.navMenu) {
     --tw-bg-opacity: 1 !important;
     background-color: rgb(30 58 138 / var(--tw-bg-opacity)) !important;
   }
@@ -186,7 +186,7 @@
 
     .logo {
       scale: 85%;
-      transform: translate(-140px, 0px);
+      transform: translate(50px, 0px);
       padding-bottom: 35px;
     }
 
@@ -194,7 +194,7 @@
       width: 60%;
       color: white !important;
       min-width: 300px;
-      transform: translate(-165px, -50px);
+      transform: translateY(-50px);
     }
 
     .silver {
@@ -248,9 +248,13 @@
       width: 100%;
     }
 
+    .mobile_intro {
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+    }
 
     p {
-      color: #777777;
+      color: #888888;
       font-size: 16px;
       line-height: 2.0;
       margin-bottom: 12px !important;
@@ -286,7 +290,7 @@
     }
     
     h2 {
-      font-size: 20px !important;
+      font-size: 35px !important;
       font-weight: bold;
       line-height: 0.95;
       margin-bottom: 16px !important;
@@ -294,7 +298,7 @@
       margin-top: 0 !important;
     }
 
-    a:not(.log, .card-button) {
+    a, h5:not(.log, .card-button) {
       margin-bottom: 16px !important;
       padding-top: 0 !important;
       margin-top: 0 !important;
@@ -306,17 +310,29 @@
       margin-right: 0 !important;
     }
 
-    div:not(.page-content, .main-content, .fog) {
+    div:not(.page-content, .main-content, .fog, .inner_ecard, .no_bott) {
       padding-bottom: 20px !important;
       padding-top: 0 !important;
       margin-top: 0 !important;
     }
 
-    *:not(button, .card, .card-button, body, html, .page-content, .log) {
+    *:not(button, .card, .card-button, body, html, .page-content, .log, .mobile_intro, .pcard) {
       padding-left: 4px !important;
       padding-right: 4px !important;
       margin-left: 0 !important;
       margin-right: 0 !important;
+    }
+
+    .currentNav:after {
+      content: "";
+      position: absolute;
+      background-color: #b49759;
+      height: 3px;
+      width: 0;
+      left: 0;
+      bottom: 0px;
+      transition: 0.3s;
+      width: 100%;
     }
 
     iframe {
@@ -326,14 +342,14 @@
 
     .logo {
       scale: 85%;
-      transform: translate(-150px, 50px);
+      transform: translate(-10px, 50px);
       padding-bottom: 35px;
     }
 
     .hero-title {
       color: white !important;
       min-width: 300px;
-      transform: translateX(-240px);
+      transform: translateX(-120px);
     }
 
     .left {
@@ -345,14 +361,39 @@
       padding-right: 10px;
       padding-bottom: 10px;
       padding-top: 10px;
-      margin-left: 2px;
+      margin-left: 4px;
+    }
+
+    .no_mobile {
+      display: none;
+    }
+
+    .no_bott {
+      padding-bottom: 0px !important;
+    }
+
+    .gala_cont {
+      height: 19% !important;
+    }
+
+    .inner_ecard {
+      padding-bottom: 20px !important;
+      padding-top: 20px !important;
     }
 
     .pcard {
       height: 300px;
       min-width: 115px !important;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      margin-left: 4px !important;
+      margin-right: 4px !important;
     }
-    
+
+    .gala_info {
+      padding-left: 20px !important;
+    }
+
     .pinfo {
       transform: translateY(125px);
     }
@@ -416,11 +457,12 @@
     .ticket {
       font-size: 20px !important;
       line-height: 28px !important;
-      margin-right: 10%;
     }
 
     .tickd {
-      transform: translateY(-175px);
+      position: absolute;
+      right: 10%;
+      top: 68%;
     }
 
     .top {

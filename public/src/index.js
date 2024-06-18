@@ -35,7 +35,7 @@ window.onload = function() {
     create_title(){
       // This is the title creator. 🎉
       var exit = document.createElement('a')
-      exit.setAttribute('style', 'color: white; text-decoration: none; margin-left: 6vw; scale: 1.5;')
+      exit.setAttribute('style', 'color: white; text-decoration: none; margin-left: 6vw; width: 2%; scale: 1.5;')
       exit.innerHTML = '<i style="width: 10%; height: auto" class="fas fa-sign-out-alt fa-rotate-180"></i>'
       exit.setAttribute('href', 'index.html')
 
@@ -77,10 +77,45 @@ window.onload = function() {
       join_input.setAttribute('id', 'join_input')
       join_input.setAttribute('maxlength', 15)
       join_input.placeholder = 'Hi! What\'s your name?'
+
+      var join_check_container = document.createElement('div')
+      join_check_container.setAttribute('id', 'join_check_container')
+      join_check_container.setAttribute('style', 'width: 100%; display: flex; justify-content: center; padding-top: 5px; padding-bottom: 15px;')
+      var join_check = document.createElement('input')
+      join_check.setAttribute('id', 'join_check')
+      join_check.setAttribute('type', 'checkbox')
+      var join_check_label = document.createElement('label')
+      join_check_label.setAttribute('id', 'join_check_label')
+      join_check_label.setAttribute('style', 'padding-left: 1vw;')
+      join_check_label.setAttribute('for', 'join_check')
+      join_check_label.textContent = 'I agree to contribute only constructive dialogue to this community. I understand that any inappropriate content will be removed.'
       // Every time we type into the join_input
       join_input.onkeyup  = function(){
         // If the input we have is longer that 0 letters
-        if(join_input.value.length > 0){
+        if(join_input.value.length > 0 && join_check.checked == true){
+          // Make the button light up
+          join_button.classList.add('enabled')
+          // Allow the user to click the button
+          join_button.onclick = function(){
+            // Save the name to local storage. Passing in
+            // the join_input.value
+            parent.save_name(join_input.value)
+            // Remove the join_container. So the site doesn't look weird.
+            join_container.remove()
+            // parent = this. But it is not the join_button
+            // It is (MEME_CHAT = this).
+            parent.create_chat()
+          }
+        }else{
+          // If the join_input is empty then turn off the
+          // join button
+          join_button.classList.remove('enabled')
+        }
+      }
+
+      join_check.onclick  = function(){
+        // If the input we have is longer that 0 letters
+        if(join_input.value.length > 0 && join_check.checked == true){
           // Make the button light up
           join_button.classList.add('enabled')
           // Allow the user to click the button
@@ -104,7 +139,8 @@ window.onload = function() {
       // Append everything to the body
       join_button_container.append(join_button)
       join_input_container.append(join_input)
-      join_inner_container.append(join_input_container, join_button_container)
+      join_check_container.append(join_check, join_check_label)
+      join_inner_container.append(join_input_container, join_check_container,join_button_container)
       join_container.append(join_inner_container)
       document.body.append(join_container)
     }
