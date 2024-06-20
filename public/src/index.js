@@ -36,6 +36,7 @@ window.onload = function() {
       // This is the title creator. 🎉
       var exit = document.createElement('a')
       exit.setAttribute('style', 'color: white; text-decoration: none; margin-left: 6vw; width: 2%; scale: 1.5;')
+      exit.setAttribute('id', 'exit')
       exit.innerHTML = '<i style="width: 10%; height: auto" class="fas fa-sign-out-alt fa-rotate-180"></i>'
       exit.setAttribute('href', 'index.html')
 
@@ -84,6 +85,7 @@ window.onload = function() {
       var join_check = document.createElement('input')
       join_check.setAttribute('id', 'join_check')
       join_check.setAttribute('type', 'checkbox')
+      join_check.setAttribute('alt', 'Community Guidelines agreement checkbox')
       var join_check_label = document.createElement('label')
       join_check_label.setAttribute('id', 'join_check_label')
       join_check_label.setAttribute('style', 'padding-left: 1vw;')
@@ -237,7 +239,6 @@ window.onload = function() {
       var report = document.createElement('a')
       report.setAttribute('href', 'https://forms.gle/GaixoaxugXoGNsN29')
       report.setAttribute('target', '_blank')
-      report.setAttribute('style', 'color: #1D3354;')
       report.setAttribute('id', 'report')
       report.textContent = 'Report Abuse'
 

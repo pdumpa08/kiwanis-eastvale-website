@@ -13,12 +13,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
+    <script type="text/javascript">var submitted = false</script>
+    <iframe name="galaFormConfirm" id="galaFormConfirm" style="display: none;" onload="if(submitted){window.location='gala_submission.html';}"></iframe>
     <main>
       <div class="box">
         <div class="inner-box">
           <div class="forms-wrap">
             <form
               action="https://docs.google.com/forms/d/e/1FAIpQLScLzqus8zQI8GJenPBnuRDGLFH8v4yCfooQlKc18slHQoM9tA/formResponse"
+              method="post"
+              target="galaFormConfirm"
+              onSubmit="submitted=true"
               autocomplete="off"
               class="sign-in-form"
             >

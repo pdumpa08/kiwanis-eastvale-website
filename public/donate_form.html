@@ -12,12 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
+    <script type="text/javascript">var submitted = false</script>
+    <iframe name="donateFormConfirm" id="donateFormConfirm" style="display: none;" onload="if(submitted){window.location='donate_submission.html';}"></iframe>
     <main>
       <div class="box">
         <div class="inner-box">
           <div class="forms-wrap">
             <form
               action="https://docs.google.com/forms/d/e/1FAIpQLScfxFTbKqRJnZxiVLdsBTvuvfKQno-PS9GYyhY18zxHdjKCCw/formResponse"
+              method="post"
+              target="donateFormConfirm"
+              onSubmit="submitted=true"
               autocomplete="off"
               class="sign-in-form"
             >

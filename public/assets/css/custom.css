@@ -2,19 +2,18 @@
     animation: fadeInDown 2s;
   }
 
-  /* 
+  /*
   * {
     outline: 1px solid #f00 !important;
   }
   */
 
-  h2 {
-    font-family: "Inter", sans-serif !important;
-    font-optical-sizing: auto !important;
-    font-weight: 500 !important;
-    font-style: normal !important;
-    font-variation-settings:
-      "slnt" 0 !important;
+  .bg-blue {
+    background-color: #003874;
+  }
+
+  .bg-gold {
+    background-color: #b49759;
   }
 
   .fade-in-image-t {
@@ -43,6 +42,9 @@
     font-size: 100px;
     font-weight: bold;
     line-height: 0.95;
+  }
+
+  h1:not(.home-title, .gala-title) {
     margin-bottom: 50px;
   }
   
@@ -50,6 +52,9 @@
     font-size: 60px;
     font-weight: bold;
     line-height: 0.95;
+  }
+
+  h2:not(.home-quote, .gala-title) {
     margin-bottom: 30px;
   }
   
@@ -57,6 +62,15 @@
     color: #888888;
     font-size: 20px;
     line-height: 2.0;
+  }
+
+  .ecard {
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+  }
+
+  p:not(.banner-bodytext, .home-bodytext, .ebody, .proj-title, .proj-bodytext, .gala-bodytext, .etitle) {
     margin-bottom: 50px;
   }
   
@@ -112,12 +126,12 @@
 
   button:hover:not(.navMenu) {
     --tw-bg-opacity: 1 !important;
-    background-color: rgb(30 58 138 / var(--tw-bg-opacity)) !important;
+    background-color: rgb(150 126 74 / var(--tw-bg-opacity)) !important;
   }
 
   .card-button:hover {
     --tw-bg-opacity: 1 !important;
-    background-color: rgb(30 58 138 / var(--tw-bg-opacity)) !important;
+    background-color: rgb(150 126 74 / var(--tw-bg-opacity)) !important;
   }
 
   .toggle:hover {
@@ -257,9 +271,12 @@
       color: #888888;
       font-size: 16px;
       line-height: 2.0;
-      margin-bottom: 12px !important;
       padding-top: 0 !important;
       margin-top: 0 !important;
+    }
+
+    p:not(banner-bodytext) {
+      margin-bottom: 12px !important;
     }
 
     .card-button {
@@ -290,7 +307,7 @@
     }
     
     h2 {
-      font-size: 35px !important;
+      font-size: 21px !important;
       font-weight: bold;
       line-height: 0.95;
       margin-bottom: 16px !important;
@@ -298,7 +315,7 @@
       margin-top: 0 !important;
     }
 
-    a, h5:not(.log, .card-button) {
+    a:not(.log, .card-button), h5:not(.log, .card-button, .banner-title) {
       margin-bottom: 16px !important;
       padding-top: 0 !important;
       margin-top: 0 !important;
@@ -310,13 +327,13 @@
       margin-right: 0 !important;
     }
 
-    div:not(.page-content, .main-content, .fog, .inner_ecard, .no_bott) {
+    div:not(.page-content, .main-content, .fog, .inner_ecard, .no_bott, .banner-content) {
       padding-bottom: 20px !important;
       padding-top: 0 !important;
       margin-top: 0 !important;
     }
 
-    *:not(button, .card, .card-button, body, html, .page-content, .log, .mobile_intro, .pcard) {
+    *:not(button, .card, .card-button, body, html, .page-content, .log, .mobile_intro, .pcard, .no_pad, .banner-image, .banner) {
       padding-left: 4px !important;
       padding-right: 4px !important;
       margin-left: 0 !important;
@@ -373,7 +390,7 @@
     }
 
     .gala_cont {
-      height: 19% !important;
+      height: 25% !important;
     }
 
     .inner_ecard {
@@ -398,9 +415,13 @@
       transform: translateY(125px);
     }
 
-    .tracking-tight {
+    .etitle, .ptitle {
       font-size: 20px;
       line-height: 20px;
+    }
+
+    .banner-title {
+      font-size: 32px;
     }
 
     .silver {
@@ -462,7 +483,7 @@
     .tickd {
       position: absolute;
       right: 10%;
-      top: 68%;
+      top: 85%;
     }
 
     .top {
