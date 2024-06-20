@@ -35,10 +35,14 @@ window.onload = function() {
     create_title(){
       // This is the title creator. 🎉
       var exit = document.createElement('a')
-      exit.setAttribute('style', 'color: white; text-decoration: none; margin-left: 6vw; width: 2%; scale: 1.5;')
+      exit.setAttribute('style', 'color: white; text-decoration: none; position: absolute; left: 5%')
       exit.setAttribute('id', 'exit')
-      exit.innerHTML = '<i style="width: 10%; height: auto" class="fas fa-sign-out-alt fa-rotate-180"></i>'
       exit.setAttribute('href', 'index.html')
+
+      var exit_icon = document.createElement('i')
+      exit_icon.setAttribute('style', 'width: 10%; height: auto')
+      exit_icon.setAttribute('class', 'fas fa-sign-out-alt fa-rotate-180 fa-2x')
+      exit.append(exit_icon)
 
       var title_container = document.createElement('div')
       title_container.setAttribute('id', 'title_container')
@@ -236,16 +240,20 @@ window.onload = function() {
         parent.home()
       }
 
+      var report_cont = document.createElement('div')
+      report_cont.setAttribute('id', 'report_cont')
+
       var report = document.createElement('a')
       report.setAttribute('href', 'https://forms.gle/GaixoaxugXoGNsN29')
       report.setAttribute('target', '_blank')
       report.setAttribute('id', 'report')
       report.textContent = 'Report Abuse'
 
+      report_cont.append(report)
       chat_logout_container.append(chat_logout)
       chat_input_container.append(chat_input, chat_input_send)
       chat_inner_container.append(chat_content_container, chat_input_container, chat_logout_container)
-      chat_inner_container.append(report)
+      chat_inner_container.append(report_cont)
       chat_container.append(chat_inner_container)
       document.body.append(chat_container)
       // After creating the chat. We immediatly create a loading circle in the 'chat_content_container'

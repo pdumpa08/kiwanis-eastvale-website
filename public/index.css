@@ -145,7 +145,6 @@ body{
   #chat_inner_container{
     width: 40%;
     height: 100%;
-    text-align: center;
   }
   #chat_content_container{
     width: 100%;
@@ -202,6 +201,9 @@ body{
   
     float: left;
     margin-top: 20px;
+  }
+  #report_cont {
+    text-align: center;
   }
   #report {
     width: 100%;
@@ -317,7 +319,8 @@ body{
     }
 
     #exit {
-      padding-left: 2vw;
+      left: 5px;
+      scale: 0.5;
     }
 
     #chat_container {
@@ -328,7 +331,6 @@ body{
       width: 80%;
     }
     #chat_logout{
-      color: #1D3354;
       cursor: pointer;
       font-size: 40px;
       margin-top: 25px;
@@ -359,7 +361,6 @@ body{
       height: 100%;
       float: left;
       background-color: Transparent;
-      color: #b5995a;
       font-size: 40px;
     }
     #chat_input_send{
@@ -369,7 +370,6 @@ body{
       font-size: 40px;
       background-color: Transparent;
       text-align: right;
-      color: #ccc;
     }
     #chat_logout_container{
       width: 100%;

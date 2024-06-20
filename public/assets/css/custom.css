@@ -301,22 +301,33 @@
       font-size: 35px !important;
       font-weight: bold;
       line-height: 0.95;
-      margin-bottom: 12px !important;
-      padding-top: 0 !important;
-      margin-top: 0 !important;
-    }
-    
-    h2 {
-      font-size: 21px !important;
-      font-weight: bold;
-      line-height: 0.95;
-      margin-bottom: 16px !important;
+      margin-bottom: 14px !important;
       padding-top: 0 !important;
       margin-top: 0 !important;
     }
 
+    .youtube-player {
+      padding-bottom: 20px !important;
+    }
+    
+    h2 {
+      font-size: 24px !important;
+      font-weight: bold;
+      line-height: 0.95;
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    h2:not(.home-quote, .gala-title) {
+      margin-bottom: 14px !important;
+    }
+
+    .home-quote {
+      padding-bottom: 0px !important;
+    }
+
     a:not(.log, .card-button), h5:not(.log, .card-button, .banner-title) {
-      margin-bottom: 16px !important;
+      margin-bottom: 14px !important;
       padding-top: 0 !important;
       margin-top: 0 !important;
     }
@@ -327,10 +338,19 @@
       margin-right: 0 !important;
     }
 
-    div:not(.page-content, .main-content, .fog, .inner_ecard, .no_bott, .banner-content) {
+    div:not(.page-content, .main-content, .fog, .inner_ecard, .no_bott, .banner-content, .pcont, .econt) {
       padding-bottom: 20px !important;
       padding-top: 0 !important;
       margin-top: 0 !important;
+    }
+
+    .pcont {
+      padding-top: 0 !important;
+      padding-bottom: 14px !important;
+    }
+    .econt {
+      padding-top: 0 !important;
+      padding-bottom: 14px !important;
     }
 
     *:not(button, .card, .card-button, body, html, .page-content, .log, .mobile_intro, .pcard, .no_pad, .banner-image, .banner) {
@@ -355,6 +375,32 @@
     iframe {
       width: 350px;
       max-height: 400px;
+    }
+
+    .proj-title {
+      font-size: 35px !important;
+      font-weight: bold;
+      line-height: 0.95;
+      margin-bottom: 14px !important;
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    .proj-bodytext {
+      margin-bottom: 14px !important;
+    }
+
+    .e-main-title {
+      font-size: 35px !important;
+      font-weight: bold;
+      line-height: 0.95;
+      margin-bottom: 14px !important;
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    .e-intro {
+      margin-bottom: 14px !important;
     }
 
     .logo {
@@ -458,7 +504,7 @@
     }
 
     .gg {
-      padding-top: 0 !important;
+      padding-top: 8px !important;
       margin-top: 0 !important;
     }
 
