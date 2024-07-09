@@ -55,7 +55,7 @@
         </div>
       </nav>
 
-    <div class="top h-5/6 no_bott gala_cont">
+    <div class="top h-5/6 no_bott">
         <div class="no_bott text-center">
             <h1 class="flex justify-center font-extrabold text-center px-32 pb-6 pt-12 text-8xl blue gala-title no_bott">A Salute to Service</h1>
             <p class="flex justify-center pb-6 text-black gala-bodytext no_bott">on Feb 25th, 2025</p>
@@ -82,22 +82,29 @@
     <div class="body no_bott">
 
 
-        <div class="gala_info">
-            <h2 class="text-7xl font-extrabold px-32 blue pb-2 md:pb-4 gala-title">When</h2>
-            <p class="px-36 pb-3.5 md:pb-8 text-black gala-bodytext">
+        <div class="gala_info px-40">
+            <h2 class="text-7xl font-extrabold blue pb-2 md:pb-4 gala-title">When</h2>
+            <p class="pb-3.5 md:pb-8 text-black gala-bodytext">
                 February 25, 2025
             </p>
-            <h2 class="text-7xl font-extrabold px-32 blue pb-2 md:pb-4 gala-title">Where</h2>
-            <p class="px-36 pb-3.5 md:pb-8 wh text-black gala-bodytext">
+            <h2 class="text-7xl font-extrabold blue pb-2 md:pb-4 gala-title">Where</h2>
+            <p class="b-3.5 md:pb-8 wh text-black gala-bodytext">
                 Pinnacle Room,<br>Eastvale Community Center,<br>Eastvale, CA 92880
             </p>
         </div>
-        <div class="-translate-y-72 tickd no_bott text-end" id="tickd">
-            <a target="_blank" href="gala_form.html" class="ticket position-absolute mr-60 inline">
-                <button class="text-black ticket text-3xl py-2 px-4 rounded bg-gold">
-                    Get Ticket
-                </button>
-            </a>
+        <div class="tickd no_bott" id="tickd">
+            <div class="justify-end flex px-4 banner gala-banner-cont pb-6">
+                <div class="flex flex-col bg-blue no_pad items-center gala-banner border border-gray-300 rounded-lg w-1/3 shadow md:flex-row dark:border-gray-700 dark:bg-gray-800 no_bott">
+                  <div class="flex flex-col banner-content justify-between px-4 pb-4 md:py-8 leading-normal no_pad no_bott">
+                    <p class="md:text-4xl font-bold tracking-tight banner-title pb-6 text-white text-center gala-banner-title">Support our community's most dedicated volunteers and</p>
+                    <a target="_blank" href="gala_form.html" class="ticket flex justify-center">
+                        <button class="text-black ticket text-2xl py-2 px-4 rounded bg-gold">
+                            Get Your Ticket
+                        </button>
+                    </a>
+                  </div>
+                </div>
+            </div>
         </div>
     
         
@@ -105,7 +112,7 @@
         <img class="flex ggold end-gold" alt="Gold President's Volunteer Service Award" style="height: 75vh" id="myDivId0" data-aos="fade-right" data-aos-duration="2000" src="assets/img/IMG_1935-1024x768-removebg-preview.png">
        <div class="pr-48 rig no_bott">
             <div class="flex justify-start gol no_bott">
-                <h1 class="blue gala-title md:pb-6">Gold</br>Award</h1>
+                <h1 class="blue gala-title md:pb-6 g-title">Gold</br>Award</h1>
             </div>
             <div class="flex justify-start gol">
                 <p class="text-black">Under 16 - 100 Hours<br/>
@@ -115,10 +122,10 @@
     </div>
 
 
-    <div class="flex items-center justify-center no_bott">
+    <div class="flex items-center justify-center ss no_bott">
         <div class="pr-32 rig no_bott">
             <div class="flex justify-start sil no_bott">
-                <h1 class="blue gala-title md:pb-6">Silver</br>Award</h1>
+                <h1 class="blue gala-title md:pb-6 s-title">Silver</br>Award</h1>
             </div>
             <div class="flex justify-start sil">
                 <p class="text-black">Under 16 - 75 Hours<br/>
@@ -128,11 +135,11 @@
         <img class="flex justify-end silver end-silver" alt="Silver President's Volunteer Service Award" style="height: 70vh" id="myDivId1" data-aos="fade-left" data-aos-duration="2000" src="assets/img/pvsa-silver_orig.png">
     </div>
 
-    <div class="flex items-center justify-center bott no_bott">
+    <div class="flex items-center justify-center bb bott no_bott">
         <img class="flex justify-start bronze end-bronze" alt="Bronze President's Volunteer Service Award" style="height: 70vh" id="myDivId2" data-aos="fade-right" data-aos-duration="2000" src="assets/img/PVSA-Pin-bronze.png">
        <div class="pl-32 lef no_bott">
             <div class="flex justify-end bro no_bott">
-                <h1 class="blue gala-title md:pb-6">Bronze</br>Award</h1>
+                <h1 class="blue gala-title md:pb-6 b-title">Bronze</br>Award</h1>
             </div>
             <div class="flex justify-start bro no_bott">
                 <p class="text-black">Under 16 - 50 Hours<br/>
@@ -348,6 +355,46 @@
 
        window.addEventListener('scroll', scrollHandler);
     </script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyATjRpcC0oqPD_ZtgyYNh0lDd5aWbZMUCw",
+      authDomain: "kiwanis-1be5f.firebaseapp.com",
+      databaseURL: "https://kiwanis-1be5f-default-rtdb.firebaseio.com",
+      projectId: "kiwanis-1be5f",
+      storageBucket: "kiwanis-1be5f.appspot.com",
+      messagingSenderId: "65582946152",
+      appId: "1:65582946152:web:8955b62a8d921c2f5568dd",
+      measurementId: "G-9YWDQF8WDL"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    logEvent(analytics, 'screen_view', {
+        firebase_screen: "Gala",
+    });
+    let features = [
+          'auth', 
+          'database', 
+          'firestore',
+          'functions',
+          'messaging', 
+          'storage', 
+          'analytics', 
+          'remoteConfig',
+          'performance',
+        ].filter(feature => typeof app[feature] === 'function');
+    console.log(`Firebase SDK loaded with ${features.join(', ')}`);
+  </script>
 </body>
 <script>
     AOS.init();

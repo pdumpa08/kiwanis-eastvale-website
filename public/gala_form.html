@@ -18,6 +18,7 @@
     <main>
       <div class="box">
         <div class="inner-box">
+          <a style="text-decoration: none; color: #003975; margin-left: 30px; position:relative; z-index:10;" href="index.html"><i class="fas fa-arrow-left fa-xl" alt="Back button"></i></a>
           <div class="forms-wrap">
             <form
               action="https://docs.google.com/forms/d/e/1FAIpQLScLzqus8zQI8GJenPBnuRDGLFH8v4yCfooQlKc18slHQoM9tA/formResponse"
@@ -28,8 +29,7 @@
               class="sign-in-form"
             >
 
-              <a style="text-decoration: none; color: #003975;" href="index.html"><i class="fas fa-arrow-left fa-xl"></i></a>
-              <div class="heading" style="text-align: center;">
+            <div class="heading" style="text-align: center;">
                 <h2>PVSA Gala RSVP</h2>
               </div>
 
@@ -49,8 +49,8 @@
                 <div class="input-wrap">
                   <input
                     type="number"
-                    min=1
-                    max=4
+                    min="1"
+                    max="4"
                     class="input-field"
                     autocomplete="off"
                     required
@@ -68,7 +68,45 @@
           </div>
           </div>
         </div>
-      </div>
     </main>
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyATjRpcC0oqPD_ZtgyYNh0lDd5aWbZMUCw",
+      authDomain: "kiwanis-1be5f.firebaseapp.com",
+      databaseURL: "https://kiwanis-1be5f-default-rtdb.firebaseio.com",
+      projectId: "kiwanis-1be5f",
+      storageBucket: "kiwanis-1be5f.appspot.com",
+      messagingSenderId: "65582946152",
+      appId: "1:65582946152:web:8955b62a8d921c2f5568dd",
+      measurementId: "G-9YWDQF8WDL"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    logEvent(analytics, 'screen_view', {
+        firebase_screen: "Gala RSVP",
+    });
+    let features = [
+          'auth', 
+          'database', 
+          'firestore',
+          'functions',
+          'messaging', 
+          'storage', 
+          'analytics', 
+          'remoteConfig',
+          'performance',
+        ].filter(feature => typeof app[feature] === 'function');
+    console.log(`Firebase SDK loaded with ${features.join(', ')}`);
+  </script>
   </body>
 </html>

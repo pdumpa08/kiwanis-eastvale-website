@@ -2,15 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> Kiwanis Community </title>
+    <title>Kiwanis Community</title>
     <!-- Google fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&display=swap' rel='stylesheet'/>
-    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'/>
     <!-- Use font awesome icons. -->
     <script src="https://kit.fontawesome.com/569d8d3b6c.js" crossorigin="anonymous"></script>
     <!-- Use firebase app and database. -->
     <script type="module" src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script type="module" src="'https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js'"></script>
 
     <!-- The CSS and JS file must be declared after the things above-->
     <link rel="stylesheet" href="index.css"/>
@@ -18,5 +21,24 @@
 
   </head>
   <body>
+    <script type="module">
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      logEvent(analytics, 'screen_view', {
+          firebase_screen: "Kiwanis Community",
+      });
+      let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+      console.log(`Firebase SDK loaded with ${features.join(', ')}`);
+    </script>
   </body>
 </html>

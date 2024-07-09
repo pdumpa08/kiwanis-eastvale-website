@@ -16,6 +16,9 @@ window.onload = function() {
   firebase.initializeApp(firebaseConfig);
   // This is very IMPORTANT!! We're going to use "db" a lot.
   var db = firebase.database()
+  // Analytics initialization
+  
+  
   // This is the main class. It's called MEME_CHAT
   class MEME_CHAT{
     // Home() is used to create the home page
@@ -51,7 +54,6 @@ window.onload = function() {
 
       var title = document.createElement('h1')
       title.setAttribute('id', 'title')
-      title_inner_container.setAttribute('style', 'transform: translateX(-2%)')
       title.textContent = 'Kiwanis Community'
 
       title_container.append(exit)
@@ -85,7 +87,7 @@ window.onload = function() {
 
       var join_check_container = document.createElement('div')
       join_check_container.setAttribute('id', 'join_check_container')
-      join_check_container.setAttribute('style', 'width: 100%; display: flex; justify-content: center; padding-top: 5px; padding-bottom: 15px;')
+      join_check_container.setAttribute('style', 'width: 100%; display: flex; justify-content: center; aling-content: center; padding-top: 5px; padding-bottom: 15px;')
       var join_check = document.createElement('input')
       join_check.setAttribute('id', 'join_check')
       join_check.setAttribute('type', 'checkbox')

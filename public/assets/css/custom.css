@@ -39,7 +39,7 @@
   }
 
   h1 {
-    font-size: 100px;
+    font-size: 6.25rem;
     font-weight: bold;
     line-height: 0.95;
   }
@@ -49,7 +49,7 @@
   }
   
   h2 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: bold;
     line-height: 0.95;
   }
@@ -60,7 +60,7 @@
   
   p {
     color: #888888;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 2.0;
   }
 
@@ -70,8 +70,14 @@
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
   }
 
-  p:not(.banner-bodytext, .home-bodytext, .ebody, .proj-title, .proj-bodytext, .gala-bodytext, .etitle) {
+  p:not(.banner-bodytext, .home-bodytext, .ebody, .proj-title, .proj-bodytext, .gala-bodytext, .etitle, .gala-banner-title) {
     margin-bottom: 50px;
+  }
+
+  .tickd {
+    position: absolute;
+    right: 10%;
+    top: 95%;
   }
   
   @keyframes fadeInDownA {
@@ -176,10 +182,78 @@
     width: 100%;
   }
 
-  @media (min-width:769px) and (max-width:1024px) {
+  @media (min-width:1048px) and (max-width:1368px) {
+    .header-content {
+      transform: translateY(-90%) !important;
+    }
+  }
+
+
+
+  @media (min-width:769px) and (max-width:1048px) {
 
     p {
-      margin-bottom: 0px;
+      margin-bottom: 0px !important;
+      font-size: 1.5rem !important;
+    }
+
+    .e-main-title, .proj-title {
+      font-size: 4.5rem !important;
+    }
+
+    a, button, .fot {
+      font-size: 1.5rem !important;
+    }
+
+    .home {
+      font-size: 2rem !important;
+    }
+
+    .gg, .ss, .bb {
+      padding-bottom: 40px !important;
+    }
+
+    .g-title, .s-title, .b-title {
+      padding-bottom: 16px !important;
+    }
+
+    .sil {
+      text-align: center !important;
+      justify-content: center !important;
+    }
+
+    .gol {
+      text-align: center !important;
+      justify-content: center !important;
+    }
+
+    .bro {
+      text-align: center !important;
+      justify-content: center !important;
+      display: block;
+    }
+
+    .gala_info {
+      padding-left: 96px !important;
+      padding-bottom: 50px !important;
+    }
+
+    .gala-banner {
+      width: 25%;
+    }
+
+    .tickd {
+      right: 5%;
+      top: 65%;
+    }
+
+    .gala-banner-title {
+      font-size: 2.188rem !important;
+    }
+
+    .ticket {
+      font-size: 1.5rem !important;
+      line-height: 28px !important;
     }
 
     .end-gold {
@@ -196,6 +270,10 @@
 
     .top {
       height: 60%;
+    }
+
+    .header-content {
+      transform: translateY(-80%);
     }
 
     .logo {
@@ -269,13 +347,13 @@
 
     p {
       color: #888888;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 2.0;
       padding-top: 0 !important;
       margin-top: 0 !important;
     }
 
-    p:not(banner-bodytext) {
+    p:not(.banner-bodytext) {
       margin-bottom: 12px !important;
     }
 
@@ -298,7 +376,7 @@
     }
 
     h1 {
-      font-size: 35px !important;
+      font-size: 2.188rem !important;
       font-weight: bold;
       line-height: 0.95;
       margin-bottom: 14px !important;
@@ -311,11 +389,15 @@
     }
     
     h2 {
-      font-size: 24px !important;
+      font-size: 1.5rem !important;
       font-weight: bold;
       line-height: 0.95;
       padding-top: 0 !important;
       margin-top: 0 !important;
+    }
+
+    a, button {
+      font-size: 1rem !important;
     }
 
     h2:not(.home-quote, .gala-title) {
@@ -378,7 +460,7 @@
     }
 
     .proj-title {
-      font-size: 35px !important;
+      font-size: 2.188rem !important;
       font-weight: bold;
       line-height: 0.95;
       margin-bottom: 14px !important;
@@ -391,7 +473,7 @@
     }
 
     .e-main-title {
-      font-size: 35px !important;
+      font-size: 2.188rem !important;
       font-weight: bold;
       line-height: 0.95;
       margin-bottom: 14px !important;
@@ -435,10 +517,6 @@
       padding-bottom: 0px !important;
     }
 
-    .gala_cont {
-      height: 25% !important;
-    }
-
     .inner_ecard {
       padding-bottom: 20px !important;
       padding-top: 20px !important;
@@ -453,21 +531,17 @@
       margin-right: 4px !important;
     }
 
-    .gala_info {
-      padding-left: 20px !important;
-    }
-
     .pinfo {
       transform: translateY(125px);
     }
 
     .etitle, .ptitle {
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 20px;
     }
 
     .banner-title {
-      font-size: 32px;
+      font-size: 2rem;
     }
 
     .silver {
@@ -521,19 +595,38 @@
       color: #003874 !important;
     }
 
+    .gala_info {
+      text-align: center;
+    }
+
     .ticket {
-      font-size: 20px !important;
-      line-height: 28px !important;
+      font-size: 1rem !important;
+      line-height: 20px !important;
     }
 
     .tickd {
-      position: absolute;
-      right: 10%;
-      top: 85%;
+      position: relative;
+      right: 0;
+      top: 0;
+    }
+
+    .gala-banner {
+      width: 50%;
+    }
+
+    .gala-banner-cont {
+      justify-content: center !important;
+    }
+
+    .gala-banner-title {
+      font-size: 1.25rem !important;
+      line-height: 24px !important;
+      padding-top: 12px !important;
+      padding-bottom: 0px !important;
     }
 
     .top {
-      height: 25%;
+      height: 25% !important;
       overflow-y: hidden;
     }
 

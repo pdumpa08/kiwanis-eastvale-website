@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>kiwanis-eastvale-website (1)</title>
+    <title>Kiwanis Projects</title>
     <link rel="stylesheet" href="assets/css/output3.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,26 +59,17 @@
     <div class="flex justify-center content-center pcont">
       <div alt="" class="card max-w-sm ml-10 pcard w-80 h-96 border border-gray-200 rounded-lg shadow" style="background-image: url('assets/img/unnamed (1).jpg');">
         <div class="p-5 translate-y-52 pinfo">
-            <a href="#">
-                <h5 class="mb-2 text-4xl font-bold tracking-tight ptitle text-white">Barks & Brews</h5>
-            </a>
-            
+          <h5 class="mb-2 text-4xl font-bold tracking-tight ptitle text-white">Barks & Brews</h5>
         </div>
       </div>
       <div alt="" class="card max-w-sm cen mx-10 pcard w-80 h-96 border border-gray-200 rounded-lg shadow" style="background-image: url('assets/img/4cca24bc22efa6316fd16bcc0a99b2a43729cf33e270b787fdb1bdd5bbc1dcd3-rimg-w600-h450-gmir.jpg');">
         <div class="p-5 translate-y-52 pinfo">
-            <a href="#">
-                <h5 class="mb-2 text-4xl font-bold tracking-tight ptitle text-white">Street Cleanups</h5>
-            </a>
-            
+          <h5 class="mb-2 text-4xl font-bold tracking-tight ptitle text-white">Street Cleanups</h5>
         </div>
       </div>
       <div alt="" class="card max-w-sm mr-10 pcard w-80 h-96 border border-gray-200 rounded-lg shadow" style="background-image: url('assets/img/IMG_3027.jpg');">
         <div class="p-5 translate-y-52 pinfo">
-            <a href="#">
-                <h5 class="mb-2 text-4xl font-bold tracking-tight ptitle text-white">City Council Meetings</h5>
-            </a>
-            
+          <h5 class="mb-2 text-4xl font-bold tracking-tight ptitle text-white">City Council Meetings</h5>
         </div>
       </div>
     </div>
@@ -86,26 +77,17 @@
     <div class="bot flex justify-center mb-10 pt-12 pcont">
       <div alt="" class="card max-w-sm ml-10 pcard w-80 h-96 border border-gray-200 rounded-lg shadow " style="background-image: url('assets/img/IMG_0487.jpg');">
         <div class="p-5 translate-y-52 pinfo">
-            <a href="#">
-                <h5 class="mb-2 text-4xl font-bold tracking-tight ptitle text-white">Kiwanis Meets</h5>
-            </a>
-            
+          <h5 class="mb-2 text-4xl font-bold tracking-tight ptitle text-white">Kiwanis Meets</h5>
         </div>
       </div>
       <div alt="" class="card max-w-sm w-80 cen pcard mx-10 h-96 border border-gray-200 rounded-lg shadow " style="background-image: url('assets/img/unnamed (1).png');">
         <div class="p-5 translate-y-52 pinfo">
-            <a href="#">
-                <h5 class="mb-2 text-4xl font-bold tracking-tight ptitle text-white">Miracle on Citrus Street</h5>
-            </a>
-            
+          <h5 class="mb-2 text-4xl font-bold tracking-tight ptitle text-white">Miracle on Citrus Street</h5>
         </div>
       </div>
       <div alt="" class="card max-w-sm mr-10 pcard w-80 h-96 border border-gray-200 rounded-lg shadow " style="background-image: url('assets/img/IMG_3026.jpg');">
         <div class="p-5 translate-y-52 pinfo">
-            <a href="#">
-                <h5 class="mb-2 text-4xl font-bold tracking-tight ptitle text-white">Lantern Festival</h5>
-            </a>
-            
+          <h5 class="mb-2 text-4xl font-bold tracking-tight ptitle text-white">Lantern Festival</h5> 
         </div>
       </div>
     </div>
@@ -155,6 +137,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
     <script src="assets/js/Basic-fancyBox-Gallery-myfancybox.js"></script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyATjRpcC0oqPD_ZtgyYNh0lDd5aWbZMUCw",
+        authDomain: "kiwanis-1be5f.firebaseapp.com",
+        databaseURL: "https://kiwanis-1be5f-default-rtdb.firebaseio.com",
+        projectId: "kiwanis-1be5f",
+        storageBucket: "kiwanis-1be5f.appspot.com",
+        messagingSenderId: "65582946152",
+        appId: "1:65582946152:web:8955b62a8d921c2f5568dd",
+        measurementId: "G-9YWDQF8WDL"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      logEvent(analytics, 'screen_view', {
+          firebase_screen: "Projects",
+      });
+      let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+      console.log(`Firebase SDK loaded with ${features.join(', ')}`);
+    </script>
 </body>
 
 </html>

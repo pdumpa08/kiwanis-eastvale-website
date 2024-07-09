@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event Calendar</title>
+    <title>Kiwanis Events</title>
     <link rel="stylesheet" href="assets/css/output3.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -186,5 +186,44 @@
       </div>
     </footer>
     <script src="assets/js/flowbite.min.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyATjRpcC0oqPD_ZtgyYNh0lDd5aWbZMUCw",
+        authDomain: "kiwanis-1be5f.firebaseapp.com",
+        databaseURL: "https://kiwanis-1be5f-default-rtdb.firebaseio.com",
+        projectId: "kiwanis-1be5f",
+        storageBucket: "kiwanis-1be5f.appspot.com",
+        messagingSenderId: "65582946152",
+        appId: "1:65582946152:web:8955b62a8d921c2f5568dd",
+        measurementId: "G-9YWDQF8WDL"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      logEvent(analytics, 'screen_view', {
+          firebase_screen: "Events",
+      });
+      let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+      console.log(`Firebase SDK loaded with ${features.join(', ')}`);
+    </script>
   </body>
 </html>
