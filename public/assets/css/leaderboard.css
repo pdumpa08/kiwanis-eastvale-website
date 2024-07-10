@@ -1,0 +1,34 @@
+.tabs_sidebar {
+    margin-left: 10%;
+    display: flex;
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+.tabs_button {
+    display: inline;
+    padding: 10px;
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.tabs_button::after {
+    background: #dddddd;
+}
+
+.tabs_button--active {
+    font-weight: bold;
+    border-bottom: 3px solid #0a2e7f;
+    background: #dddddd;
+}
+
+.tabs_content {
+    display: none;
+}
+
+.tabs_content--active {
+    display: block;
+}
