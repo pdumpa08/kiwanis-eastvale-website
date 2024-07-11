@@ -35,27 +35,27 @@
     display: grid;
     text-overflow: clip;
     overflow: hidden;
+    transition: transform 500ms;
   }
 
   .pcard:hover .card-info{ 
-    transition-property: all;
-    transition-duration: 0.5s;
     opacity: 1;
     
   }
   .card-info{
     opacity: 0;
+    transition: opacity 0.5s ease-in-out;
   } 
   .revTrans{
     opacity: 1;
+    transition: transform 0.5s ease-in-out;
   }
   .pcard:hover .revTrans{
     transform: TranslateY(0);
-    opacity: 1;
-    transition-property: all;
-    transition-duration: 1s;
   }
-
+  .pcard:not(:hover) .revTrans {
+    transform: translateY(13rem); /* Transition revTrans back to original position on hover-off */
+  }
   .fade-in-image-a {
     animation: fadeInDownA 2s;
   }
