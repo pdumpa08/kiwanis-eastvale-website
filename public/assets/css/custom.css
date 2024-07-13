@@ -45,6 +45,7 @@
   .card-info{
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    font-size: medium;
   } 
   .revTrans{
     opacity: 1;
