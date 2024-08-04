@@ -36,6 +36,7 @@
     text-overflow: clip;
     overflow: hidden;
     transition: transform 500ms;
+    
   }
 
   .pcard:hover .card-info{ 
@@ -204,6 +205,7 @@
     transition: 0.3s;
     width: 100%;
   }
+  
 
   @media (min-width:1048px) and (max-width:1368px) {
     .header-content {
@@ -546,8 +548,8 @@
     }
 
     .pcard {
-      height: 300px;
-      min-width: 115px !important;
+      height: 30vhx !important;
+      min-width: 40vh !important;
       padding-left: 0px !important;
       padding-right: 0px !important;
       margin-left: 4px !important;
