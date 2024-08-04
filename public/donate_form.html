@@ -31,56 +31,21 @@
                 <h2>Support Kiwanis Eastvale</h2>
               </div>
 
-              <div class="actual-form">
-                <div class="input-wrap">
-                  <input
-                    type="text"
-                    class="input-field"
-                    autocomplete="off"
-                    required
-                    name="entry.685004429"
-                    placeholder="Donor Name"
-                  />
-                  <p style="display: inline; color: red">*</p>
-                </div>
+              <script src="https://www.paypal.com/sdk/js?client-id=BAAo_CyMqTB_Be3jlhJViTfC8qhyras26FuMAfn_YgI0WrqB6ARDI4tyIqgF1QxJnRODCQc9JGPyCASfrs&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+              <div id="paypal-container-L4H7ZGS2GYW6E"></div>
+              <script>
+                paypal.HostedButtons({
+                  hostedButtonId: "L4H7ZGS2GYW6E",
+                }).render("#paypal-container-L4H7ZGS2GYW6E")
+              </script>
 
-                <div class="actual-form">
-                  <div class="input-wrap">
-                    <input
-                      type="text"
-                      class="input-field"
-                      autocomplete="off"
-                      required
-                      name="entry.2119094698"
-                      placeholder="Donor Contact"
-                    />
-                    <p style="display: inline; color: red">*</p>
-                  </div>
-                  
-
-                <div class="input-wrap">
-                  <input
-                    type="number"
-                    min="1"
-                    class="input-field"
-                    autocomplete="off"
-                    required
-                    name="entry.1809698314"
-                    placeholder="Amount (in $)"
-                  />
-                  <p style="display: inline; color: red">*</p>
-                </div>
-
-                <button type="submit" class="sign-btn">
-                  Confirm Donation
-                </button>
-              </div>
-            </form>
           </div>
           </div>
         </div>
       </div>
     </main>
+    
+
     <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
